@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{DAC78B79-0097-4F8D-8303-C6600DB9AD10}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Infastructer", "1. Infastructer", "{83CC50AB-3477-4E5B-A625-D09BD0207863}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{6380085D-A94F-4826-8583-0E2743DE3FC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{E598A110-ABF3-4321-A803-33F213417344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eIMIC223925.WebApp", "eIMIC223925.WebApp\eIMIC223925.WebApp.csproj", "{77518F7E-DA67-402A-AA7D-CF92378CCEBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77518F7E-DA67-402A-AA7D-CF92378CCEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77518F7E-DA67-402A-AA7D-CF92378CCEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77518F7E-DA67-402A-AA7D-CF92378CCEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77518F7E-DA67-402A-AA7D-CF92378CCEBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77518F7E-DA67-402A-AA7D-CF92378CCEBF} = {E598A110-ABF3-4321-A803-33F213417344}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C2B343B-5F8A-44B4-8114-14E112AEEE59}
+	EndGlobalSection
+EndGlobal
