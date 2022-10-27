@@ -17,6 +17,7 @@ namespace eIMIC223925.DATA.Entities
         public OrderStatus Status { set; get; }
 
         public List<OrderDetail> OrderDetails { get; set; }
+        public AppUser AppUser { get; set; }
 
     }
 }
