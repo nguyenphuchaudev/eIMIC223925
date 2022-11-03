@@ -101,7 +101,6 @@ namespace eIMIC223925.Application.Catalog.Products
             await _context.SaveChangesAsync();
             return product.Id;
         }
-
         
         public async Task<int> Delete(int productId)
         {
