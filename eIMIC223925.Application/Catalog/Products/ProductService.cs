@@ -250,6 +250,8 @@ namespace eIMIC223925.Application.Catalog.Products
             var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
             && x.LanguageId == languageId);
 
+            if (product == null || productTranslation == null) throw new eIMIC223925Exception($"Cannot find a product with id: {productId}");
+
             var productViewModel = new ProductViewModel()
             {
                 Id = product.Id,
@@ -266,6 +268,7 @@ namespace eIMIC223925.Application.Catalog.Products
                 Stock = product.Stock,
                 ViewCount = product.ViewCount
             };
+
             return productViewModel;
         }
 

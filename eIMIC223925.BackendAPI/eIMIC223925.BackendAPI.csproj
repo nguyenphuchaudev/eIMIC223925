@@ -15,4 +15,8 @@
     <ProjectReference Include="..\eIMIC223925.ViewModels\eIMIC223925.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\user-content\" />
+  </ItemGroup>
+
 </Project>
