@@ -1,6 +1,7 @@
 ﻿using eIMIC223925.Application.Catalog.Products;
 using eIMIC223925.ViewModels.Catalog.ProductImages;
 using eIMIC223925.ViewModels.Catalog.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,6 +13,7 @@ namespace eIMIC223925.BackendAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
