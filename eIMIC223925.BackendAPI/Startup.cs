@@ -4,6 +4,8 @@ using eIMIC223925.Application.System.Users;
 using eIMIC223925.DATA.EF;
 using eIMIC223925.DATA.Entities;
 using eIMIC223925.Utilities.Constants;
+using eIMIC223925.ViewModels.System.Users;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -52,7 +54,8 @@ namespace eIMIC223925.BackendAPI
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
 
             services.AddSwaggerGen(c =>
             {
