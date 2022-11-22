@@ -6,4 +6,4 @@
 ## Youtube tutorial
 ## How to configure and run
 ## How to contribute
-Dang cap nhat ANC a
+Dang cap nhat
