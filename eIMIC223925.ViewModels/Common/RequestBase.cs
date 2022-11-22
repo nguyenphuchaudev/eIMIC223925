@@ -6,6 +6,19 @@ namespace eIMIC223925.ViewModels.Common
 {
     public class RequestBase
     {
-        public string BearerToken { get; set; }
+        public int PageIndex { get; set; }
+
+        public int PageSize { get; set; }
+
+        public int TotalRecords { get; set; }
+
+        public int PageCount
+        {
+            get
+            {
+                var pageCount = (double)TotalRecords / PageSize;
+                return (int)Math.Ceiling(pageCount);
+            }
+        }
     }
 }
